@@ -1,3 +1,6 @@
+# Dependancies You Need for this Config
+# zsh-syntax-highlighting - syntax highlighting for ZSH in standard repos
+# lf-bin - Binaries for LF in AUR
 # Enable colors and change prompt:
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
