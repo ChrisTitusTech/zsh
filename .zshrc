@@ -1,6 +1,8 @@
 # Dependancies You Need for this Config
 # zsh-syntax-highlighting - syntax highlighting for ZSH in standard repos
-# lf-bin - Binaries for LF in AUR
+# autojump - jump to directories with j or jc for child or jo to open in file manager
+# zsh-autosuggestions - Suggestions based on your history
+
 # Enable colors and change prompt:
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
@@ -17,21 +19,13 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
-# Use lf to switch directories and bind it to ctrl-o
-lfcd () {
-    tmp="$(mktemp)"
-    lf -last-dir-path="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        rm -f "$tmp"
-        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-    fi
-}
-bindkey -s '^o' 'lfcd\n'
+# Custom ZSH Binds
+bindkey '^ ' autosuggest-accept
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.zsh/shortcutrc" ] && source "$HOME/.zsh/shortcutrc"
 [ -f "$HOME/.zsh/aliasrc" ] && source "$HOME/.zsh/aliasrc"
 
 # Load ; should be last.
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
