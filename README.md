@@ -8,7 +8,7 @@ mkdir -p "$HOME/.zsh"
 wget https://github.com/ChrisTitusTech/zsh/raw/master/.zsh/aliasrc -O ~/.zsh/aliasrc
 git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
 ```
-## Get Dependancies 
+## Get Dependencies 
   - zsh-syntax-highlighting - syntax highlighting for ZSH in standard repos
   - autojump - jump to directories with j or jc for child or jo to open in file manager
   - zsh-autosuggestions - Suggestions based on your history
