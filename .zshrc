@@ -5,7 +5,7 @@
 
 # Initial Setup
 # mkdir -p "$HOME/zsh/.zsh"
-# git clone https://github.com/sindresorhus/pure.git "$HOME/zsh/.zsh/pure"
+# git submodule add https://github.com/sindresorhus/pure.git "$HOME/zsh/.zsh/pure"
 # Setup Alias in $HOME/zsh/.zsh/aliasrc
 
 # Enable colors and change prompt:
