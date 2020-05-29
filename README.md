@@ -3,8 +3,8 @@ My ZSH Config
 
 ## Setup
 ```
-git clone https://github.com/ChrisTitusTech/zsh
-git submodule add https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+git clone --recursive https://github.com/ChrisTitusTech/zsh
+ln -s -f ~/zsh/.zshrc ~/.zshrc
 ```
 ## Get Dependancies 
   - zsh-syntax-highlighting - syntax highlighting for ZSH in standard repos

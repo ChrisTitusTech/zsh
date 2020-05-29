@@ -23,7 +23,7 @@ ex ()
   fi
 }
 
-export EDITOR=nano
+export EDITOR=nvim
 
 alias pacman-update='sudo pacman-mirrors --geoip'
 

@@ -1,3 +1,6 @@
 [submodule "/home/titus/zsh/.zsh/pure"]
 	path = /home/titus/zsh/.zsh/pure
 	url = https://github.com/sindresorhus/pure.git
+[submodule ".zsh/pure"]
+	path = .zsh/pure
+	url = https://github.com/sindresorhus/pure.git
