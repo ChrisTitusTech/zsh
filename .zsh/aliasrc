@@ -77,3 +77,6 @@ alias mv='mv -i'
 alias vim='nvim'
 alias vi='nvim'
 alias nano='nvim'
+alias gds-start='sudo systemctl start openvpn-client@gds'
+alias gds-stop='sudo systemctl stop openvpn-client@gds'
+
