@@ -4,9 +4,9 @@
 # zsh-autosuggestions - Suggestions based on your history
 
 # Initial Setup
-# mkdir -p "$HOME/.zsh"
-# git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
-# Setup Alias in $HOME/.zsh/aliasrc
+# mkdir -p "$HOME/zsh/.zsh"
+# git clone https://github.com/sindresorhus/pure.git "$HOME/zsh/.zsh/pure"
+# Setup Alias in $HOME/zsh/.zsh/aliasrc
 
 # Enable colors and change prompt:
 autoload -U colors && colors
@@ -14,7 +14,7 @@ PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magent
 
 
 # Pure Prompt
-fpath+=$HOME/.zsh/pure
+fpath+=$HOME/zsh/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 
@@ -34,7 +34,7 @@ _comp_options+=(globdots)               # Include hidden files.
 bindkey '^ ' autosuggest-accept
 
 # Load aliases and shortcuts if existent.
-[ -f "$HOME/.zsh/aliasrc" ] && source "$HOME/.zsh/aliasrc"
+[ -f "$HOME/zsh/.zsh/aliasrc" ] && source "$HOME/zsh/.zsh/aliasrc"
 
 # Load ; should be last.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
