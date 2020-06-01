@@ -5,8 +5,8 @@
 
 # Initial Setup
 # mkdir -p "$HOME/zsh/.zsh"
-# git submodule add https://github.com/sindresorhus/pure.git "$HOME/zsh/.zsh/pure"
-# Setup Alias in $HOME/zsh/.zsh/aliasrc
+# git submodule add https://github.com/sindresorhus/pure.git "$HOME/zsh/pure"
+# Setup Alias in $HOME/zsh/aliasrc
 
 # Enable colors and change prompt:
 autoload -U colors && colors
@@ -14,14 +14,14 @@ PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magent
 
 
 # Pure Prompt
-fpath+=$HOME/zsh/.zsh/pure
+fpath+=$HOME/zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.cache/zsh/history
+HISTFILE=~/.cache/zshhistory
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -34,7 +34,7 @@ _comp_options+=(globdots)               # Include hidden files.
 bindkey '^ ' autosuggest-accept
 
 # Load aliases and shortcuts if existent.
-[ -f "$HOME/zsh/.zsh/aliasrc" ] && source "$HOME/zsh/.zsh/aliasrc"
+[ -f "$HOME/zsh/aliasrc" ] && source "$HOME/zsh/aliasrc"
 
 # Load ; should be last.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
