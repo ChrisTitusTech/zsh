@@ -23,9 +23,9 @@ ex ()
   fi
 }
 
-export EDITOR=vim
+export EDITOR=nano
 
-alias pacman-update='sudo pacman-mirrors --geoip'
+alias pacman-update='sudo reflector -c "CZ" -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist'
 
 alias ls='ls --color=auto'
 alias ll='ls -l'
@@ -74,8 +74,3 @@ alias unexport='unset'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-alias vim='vim'
-alias vi='vim'
-alias gds-start='sudo systemctl start openvpn-client@gds'
-alias gds-stop='sudo systemctl stop openvpn-client@gds'
-

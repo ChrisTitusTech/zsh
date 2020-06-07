@@ -13,12 +13,14 @@ autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 # Custom Variables
-EDITOR=vim
+EDITOR=nano
 
 # Pure Prompt
 fpath+=$HOME/zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
+PURE_PROMPT_SYMBOL=\$
+PURE_PROMPT_VICMD_SYMBOL=\<
 
 # History in cache directory:
 HISTSIZE=10000
@@ -34,6 +36,9 @@ _comp_options+=(globdots)               # Include hidden files.
 
 # Custom ZSH Binds
 bindkey '^ ' autosuggest-accept
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/zsh/aliasrc" ] && source "$HOME/zsh/aliasrc"
