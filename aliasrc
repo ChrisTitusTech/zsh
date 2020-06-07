@@ -1,3 +1,6 @@
+##pacman-update country
+country=CZ
+
 #
 # # ex - archive extractor
 # # usage: ex <file>
@@ -24,9 +27,21 @@ ex ()
   fi
 }
 
+test ()
+{
+echo test;
+}
+
+pacmanupdate ()
+{
+  echo "Enter your country (like 'US' or 'CZ')"
+  read update
+  sudo reflector -c $update -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist;
+}
+
 export EDITOR=nano
 
-alias pacman-update='sudo reflector -c "CZ" -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist'
+alias pacman-update='sudo reflector -c $country -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist'
 
 alias ls='ls --color=auto'
 alias ll='ls -l'
