@@ -12,7 +12,7 @@ ln -s -f ~/zsh/.zshrc ~/.zshrc
   - zsh-syntax-highlighting - syntax highlighting for ZSH
   - zsh-autosuggestions - Suggestions based on your history
   - pure - Pure shell look for zsh
-### Get this from your distribution repository
+### Get this from your distribution's repository
   - autojump - Jump to directories with j or jc for child or jo to open in file manager
   - zsh - the shell itself
 
