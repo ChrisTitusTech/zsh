@@ -24,6 +24,7 @@ prompt pure
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zshhistory
+setopt appendhistory
 
 # Basic auto/tab complete:
 autoload -U compinit
