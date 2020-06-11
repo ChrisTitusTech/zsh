@@ -6,7 +6,7 @@ My ZSH Config
 git clone --recursive https://github.com/ChrisTitusTech/zsh
 ln -s -f ~/zsh/.zshrc ~/.zshrc
 ```
-## Get Dependancies 
+## Get Dependencies 
   - zsh-syntax-highlighting - syntax highlighting for ZSH in standard repos
   - autojump - jump to directories with j or jc for child or jo to open in file manager
   - zsh-autosuggestions - Suggestions based on your history
