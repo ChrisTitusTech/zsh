@@ -79,4 +79,9 @@ alias vim='vim'
 alias vi='vim'
 alias gds-start='sudo systemctl start openvpn-client@gds'
 alias gds-stop='sudo systemctl stop openvpn-client@gds'
-
+gitpush() {
+    git add .
+    git commit -m "$*"
+    git push
+}
+alias gp=gitpush
