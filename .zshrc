@@ -11,7 +11,6 @@ fi
 # zsh-autosuggestions - Suggestions based on your history
 
 # Initial Setup
-# mkdir -p "$HOME/zsh/.zsh"
 # touch "$HOME/.cache/zshhistory
 # Setup Alias in $HOME/zsh/aliasrc
 # git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
