@@ -85,3 +85,4 @@ gitpush() {
     git push
 }
 alias gp=gitpush
+alias lbrynet='/opt/LBRY/resources/static/daemon/lbrynet'
