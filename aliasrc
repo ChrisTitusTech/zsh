@@ -84,5 +84,11 @@ gitpush() {
     git commit -m "$*"
     git push
 }
+gitupdate() {
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/github
+    ssh -T git@github.com
+}
 alias gp=gitpush
+alias gu=gitupdate
 alias lbrynet='/opt/LBRY/resources/static/daemon/lbrynet'
