@@ -82,6 +82,7 @@ alias gds-stop='sudo systemctl stop openvpn-client@gds'
 gitpush() {
     git add .
     git commit -m "$*"
+    git pull
     git push
 }
 gitupdate() {
