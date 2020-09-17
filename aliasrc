@@ -93,3 +93,4 @@ gitupdate() {
 alias gp=gitpush
 alias gu=gitupdate
 alias lbrynet='/opt/LBRY/resources/static/daemon/lbrynet'
+alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
