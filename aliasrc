@@ -90,3 +90,5 @@ alias unexport='unset'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+
+alias wallpaper=/home/jirka/.local/bin/wallpaper
