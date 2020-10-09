@@ -31,7 +31,7 @@ ln -s ~/zsh/zshrc.pure ~/.zsh
   - `autojump` - Jump to directories with j or jc for child or jo to open in file manager
   - `zsh` - the shell itself
 ### Recomended for `powerlevel10k`
-  - `[nerd-fonts](https://github.com/ryanoasis/nerd-fonts "nerd-fonts github page") - I recomend `MesloLGS NF Regular`
+  - [`nerd-fonts`](https://github.com/ryanoasis/nerd-fonts "nerd-fonts github page") - I recomend `MesloLGS NF Regular`
 
 ## Set as default
 To set zsh as default shell for your user, edit `/etc/passwd` (from `/bin/bash` to `/bin/zsh`)
@@ -43,6 +43,7 @@ To set zsh as default shell for your user, edit `/etc/passwd` (from `/bin/bash` 
   * Put your username instead of `user`
 
 From: `user:x:1000:1000::/home/user:/bin/bash`
+
 To:   `user:x:1000:1000::/home/user:/bin/zsh`
 
 ## What I used
