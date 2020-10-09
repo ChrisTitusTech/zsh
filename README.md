@@ -3,15 +3,23 @@ My ZSH config
 
 ## Setup
   - Clone the repository to your home folder
-```git clone --recursive https://github.com/jiriks74/zsh```
+```
+git clone --recursive https://github.com/jiriks74/zsh
+```
 ### `powerlevel10k` theme
   - Link the `zsh` file to your home folder as `.zshrc`
-```ln -s ~/zsh/zshrc ~/.zshrc```
+```
+ln -s ~/zsh/zshrc ~/.zshrc
+```
   - Set the `powerlevel10k` theme the way you like it
-```p10k config```
+```
+p10k config
+```
 ### `pure` shell theme
   - Link the `zsh.pure` file to your home folder as `.zshrc`
-```ln -s ~/zsh/zshrc.pure ~/.zsh```  
+```
+ln -s ~/zsh/zshrc.pure ~/.zsh
+```  
 
 ## Get Dependancies
 ### Included in this repository
@@ -33,8 +41,9 @@ To set zsh as default shell for your user, edit `/etc/passwd` (from `/bin/bash` 
 #### Modifying `/etc/passwd`
   * Find line containing your username
   * Put your username instead of `user`
+
 From: `user:x:1000:1000::/home/user:/bin/bash`
 To:   `user:x:1000:1000::/home/user:/bin/zsh`
 
 ## What I used
-My config is based on Chris Titus's config, `powerlevel10k` theme - old config `pure`
+My config is based on Chris Titus's config, `powerlevel10k` theme and `pure`
