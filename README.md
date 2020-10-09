@@ -13,6 +13,7 @@ ln -s ~/zsh/zshrc ~/.zshrc
 ```
   - Set the `powerlevel10k` theme the way you like it
 ```
+zsh
 p10k config
 ```
 ### `pure` shell theme
