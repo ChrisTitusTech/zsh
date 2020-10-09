@@ -28,9 +28,9 @@ My ZSH config
 ## Set as default
 To set zsh as default shell for your user, edit `/etc/passwd` (from `/bin/bash` to `/bin/zsh`)
 ### There are two ways:
-  - Running this command:
+#### Running this command:
 ```chsch $USER```
-  - Modifying `/etc/passwd`
+#### Modifying `/etc/passwd`
   * Find line containing your username
   * Put your username instead of `user`
 From: `user:x:1000:1000::/home/user:/bin/bash`
