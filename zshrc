@@ -28,6 +28,9 @@ bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line
 bindkey  "^[[3~"  delete-char
 
+export PATH=$PATH:/home/jirka/.local/bin
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/zsh/aliasrc" ] && source "$HOME/zsh/aliasrc"
 
@@ -35,3 +38,4 @@ bindkey  "^[[3~"  delete-char
 source $HOME/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source $HOME/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/autojump/autojump.zsh 2>/dev/null
+alias mon2cam="deno run --unstable -A -r -q https://raw.githubusercontent.com/ShayBox/Mon2Cam/master/src/mod.ts"
