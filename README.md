@@ -32,7 +32,8 @@ ln -s ~/zsh/zshrc.pure ~/.zsh
   - `powerlevel10k` theme - The the actual theme
   - `pure` - Pure shell look for zsh
 ### Get this from your distribution's repository
-  - `autojump` - Jump to directories with j or jc for child or jo to open in file manager
+  - Consider security here - autojump is ok on local machine, but I wouldn't recommend deploying it on server due to some security concerns
+    `autojump` - Jump to directories with j or jc for child or jo to open in file manager
   - `zsh` - the shell itself
 ### Recomended for `powerlevel10k`
   - [`nerd-fonts`](https://github.com/ryanoasis/nerd-fonts "nerd-fonts github page") - I recomend `MesloLGS NF Regular`
