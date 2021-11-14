@@ -1,5 +1,5 @@
 ##pacman-update country
-country=CS
+update=CZ
 
 #
 # # ex - archive extractor
@@ -34,8 +34,8 @@ echo test;
 
 pacmanupdate ()
 {
-  echo "Enter your country (like 'US' or 'CZ')"
-  read update
+  echo "Enter your country (like 'US' or 'CZ')";
+  read update;
   sudo reflector -c $update -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist;
 }
 
@@ -92,3 +92,20 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 alias wallpaper=/home/jirka/.local/bin/wallpaper
+
+gitpush() {
+    git add .
+    git commit -m "$*"
+    git pull
+    git push
+}
+gitupdate() {
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/github
+    ssh -T git@github.com
+}
+alias gp=gitpush
+alias gu=gitupdate
+alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+#alias firefox='GTK_USE_PORTAL=1 firefox'
+alias cls="clear"
